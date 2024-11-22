@@ -1,0 +1,184 @@
+html{
+  font-size:20px;
+}
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: "Times New Roman", sans-serif;
+    line-height: 40px;
+    color: hsl(0, 0%, 27%);
+  }
+  .site-header {
+    position:relative;
+    display:flex;
+    background:#000000 no-repeat center url("smiley-volunteers.jpg");
+    width:auto;
+    height: 500px;
+    margin-bottom: 10px;
+    background-size: cover;
+    color: #ffffff;
+    padding-bottom: 20px; /* Отступ снизу */
+
+}
+
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 0.5 — степень затемнения */
+  z-index: 1;
+}
+
+section {
+  background-color: #c2c4b6;
+}
+.site-header h1 {
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 70px;
+
+    margin: 0;
+    text-align:left;
+    bottom: 20px;
+    position: absolute;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 2; /* Чтобы текст был поверх затемненного слоя */
+  }
+  nav {
+    height: fit-content;
+    font-family: "Times New Roman", sans-serif; /* Укажите любой шрифт */
+    padding-left: 20px; 
+  }
+  article{
+    display:block;
+  }
+  nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    display: block; 
+    gap: 20px; /* Пробелы между элементами списка */
+    margin: 20px;
+    line-height: 30px;
+}
+
+/* Или можно отдельно задать стиль для ссылок внутри навигации */
+nav ul li a {
+    line-height: 30px;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 32px; /* Размер шрифта */
+    color: hsl(0, 0%, 27%);
+
+    font-weight: bold; /* Жирный шрифт */
+}
+.container {
+  display: inline-block;
+  margin: 30px;
+}
+.site-header {
+    position:relative;
+    display:flex;
+    background:#000000 no-repeat center url("smiley-volunteers.jpg");
+    width:auto;
+    height: 500px;
+    margin-bottom: 10px;
+    background-size: cover;
+    color: #ffffff;
+    padding-bottom: 20px; /* Отступ снизу */
+
+}
+.site-header img {
+  display: flexbox;
+  margin: 0 auto;
+}
+
+blockquote {
+  display: flexbox;
+    font-style: italic;
+    margin: 30px;
+    font-size: 32px;
+    padding: 10px;
+    border-left: 4px solid #ccc;
+    background-color: #dadada;
+}
+.intro{
+    display: inline-block;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 2rem;
+    color: #5d7599;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
+    margin:30px;
+}
+
+h2 {
+  font-size: 2.0rem;
+  line-height: 30px;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+
+@media (min-width:950px) and (max-width:1300px) {
+    .site-header{
+      height: 600px;
+     }
+}
+@media (min-width:1300px) and (max-width:10000px) {
+    .site-header{
+      height: 1000px;
+    }
+}
+
+
+/* Адаптивные стили */
+@media (min-width: 600px) {
+  .site-header h1 {
+      font-size: 5rem;
+      padding-bottom: 40px;
+      line-height: 50px;
+  }
+
+  nav ul li a {
+      font-size: 3.2rem;
+      line-height: 70px;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size:2rem;
+  }
+  .site-header {
+      padding: 80px 20px;
+  }
+  .intro{
+    font-size: 3rem;
+    line-height: 50px;
+  }
+  .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 40px;
+  }
+   
+  h2 {
+      font-size: 2.5rem;
+      line-height: 40px;
+  }
+  h3 {
+    font-size: 2.0rem;
+    line-height: 40px;
+}
+  
+  nav ul {
+      gap: 2rem;
+  }
+}
